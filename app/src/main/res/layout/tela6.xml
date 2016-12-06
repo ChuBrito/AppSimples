@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela6">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/Yutubiu_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="174dp"
+        android:background="@drawable/youtube"
+        android:onClick="youtube" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/link_btn"
+        android:layout_alignTop="@+id/Yutubiu_btn"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/html"
+        android:onClick="html" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/sair2_btn"
+        android:background="@drawable/sair"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Yutubiu_btn"
+        android:onClick="sair2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/button10"
+        android:layout_above="@+id/link_btn"
+        android:layout_alignEnd="@+id/sair2_btn"
+        android:layout_marginBottom="46dp"
+        android:onClick="tela" />
+</RelativeLayout>
